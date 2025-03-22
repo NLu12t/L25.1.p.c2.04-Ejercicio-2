@@ -15,13 +15,13 @@ export default class Cl_ropa extends Cl_articulo {
         <tr>
             <td>${this.nombre}</td>
             <td>${this.tipo}</td>
-            <td>${this.costo}</td>
+            <td>${this.costo.toFixed(2)}</td>
             <td>${this.color}</td>
             <td>n/a</td>
             <td>${this.porcGanancia()}</td>
             <td>${this.porcDescuento()}</td>
-            <td>${this.precio()}</td>
-            </tr>
-        `;
+            <td>${this.precio().toFixed(2)}</td>
+        </tr>
+    `;
   }
 }

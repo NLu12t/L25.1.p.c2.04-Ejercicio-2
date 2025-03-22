@@ -24,22 +24,20 @@ export default class Cl_articulo {
   }
 
   porcGanancia() {
-    //condicional
-    // if(this.basico === "SI")
-    //   return this.costo * 5 /100
-    // else
-    return 20 / 100;
+    return (this.costo * 20) / 100;
+  }
+
+  porcGanancia() {
+    return 20;
   }
 
   porcDescuento() {
-    //condicional
-    if (this.color === 3) {
-      return (this.costo * 10) / 100;
-    }
     return 0;
   }
 
   precio() {
-    return this.costo - this.porcDescuento() + this.porcGanancia();
+    let descuento = (this.costo * this.porcDescuento()) / 100;
+    let ganancia = (this.costo * this.porcGanancia()) / 100;
+    return this.costo - descuento + ganancia;
   }
 }

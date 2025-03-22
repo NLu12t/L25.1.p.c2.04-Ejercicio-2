@@ -7,8 +7,7 @@ export default class Cl_viveres extends Cl_articulo {
   }
 
   porcGanancia() {
-    if (this.basico === "SI") return 50 / 100;
-    else return super.porcGanancia();
+    return this.basico === "SI" ? 5 : 20;
   }
 
   mostrar() {
@@ -16,13 +15,13 @@ export default class Cl_viveres extends Cl_articulo {
         <tr>
           <td>${this.nombre}</td>
           <td>${this.tipo}</td>
-          <td>${this.costo}</td>
+          <td>${this.costo.toFixed(2)}</td>
           <td>n/a</td>
           <td>${this.basico}</td>
           <td>${this.porcGanancia()}</td>
           <td>${this.porcDescuento()}</td>
-          <td>${this.precio()}</td>
+          <td>${this.precio().toFixed(2)}</td>
         </tr>
-        `;
+    `;
   }
 }

@@ -38,9 +38,9 @@ salida.innerHTML = `
     <th>%Descuento()</th>
     <th>Precio()</th>
   </tr>
- ${viveres1.mostrar()}
- ${ropa1.mostrar()}
- ${ropa2.mostrar()}
- ${viveres2.mostrar()}
- ${ropa3.mostrar()}
+    ${viveres1.mostrar()}
+    ${ropa1.mostrar()}
+    ${ropa2.mostrar()}
+    ${viveres2.mostrar()}
+    ${ropa3.mostrar()}
  </table> `;
