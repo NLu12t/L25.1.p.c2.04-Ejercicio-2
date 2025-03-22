@@ -24,10 +24,6 @@ export default class Cl_articulo {
   }
 
   porcGanancia() {
-    return (this.costo * 20) / 100;
-  }
-
-  porcGanancia() {
     return 20;
   }
 
